@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Event</title>
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      width: 100%;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Video Background */
+    .video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .video-container video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Content Section */
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.6); /* Overlay effect */
+      padding: 20px;
+    }
+
+    /* Booking Form */
+    .booking-form {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      padding: 20px 30px;
+      width: 100%;
+      max-width: 400px;
+      text-align: left;
+    }
+
+    .booking-form h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+      text-align: center;
+    }
+
+    .booking-form label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    .booking-form input, 
+    .booking-form select, 
+    .booking-form textarea, 
+    .booking-form button {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .booking-form button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .booking-form button:hover {
+      background-color: #45a049;
+    }
+
+    .booking-form textarea {
+      resize: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video Background -->
+  <div class="video-container">
+    <video autoplay muted loop>
+      <source src="2845487-uhd_3840_2160_30fps (1) (2).mp4".mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <form class="booking-form">
+      <h2>Book Your Event</h2>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <label for="event-type">Event Type:</label>
+      <select id="event-type" name="event-type" required>
+        <option value="wedding">Wedding</option>
+        <option value="birthday">Birthday</option>
+        <option value="corporate">Corporate</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="date">Event Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="details">Event Details:</label>
+      <textarea id="details" name="details" rows="4" placeholder="Describe your event" required></textarea>
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </div>
+
+</body>
+</html>

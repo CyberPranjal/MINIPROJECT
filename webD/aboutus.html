@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: aliceblue;
+            position: relative;
+            z-index: 2;
+        }
+
+        #about {
+            margin-top: 10%;
+            text-align: center; /* Aligns text within the <pre> element */
+            color: rgb(254, 254, 252);
+            position: relative;
+            z-index: 2;
+            font-size: x-large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Optional: matches <h1> font */
+            white-space: pre-wrap; /* Allows wrapping of text for better layout */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        #content {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Add an overlay for better text readability */
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            z-index: 1;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<body>
+    <!-- Background Video -->
+    <video id="video-background" autoplay muted loop>
+        <source src="10904396-hd_3840_2160_30fps (1).mp4".mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay for readability -->
+    <div id="overlay"></div>
+
+    <!-- Content -->
+    <div id="content">
+        <h1>About Us</h1>
+        <pre id="about">Welcome to Grand Gatherings, where we turn your visions into unforgettable events.
+Specializing in crafting seamless and stunning experiences, we bring passion, creativity, and precision to every celebration.
+From corporate events to weddings and everything in between, our dedicated team ensures every detail is executed flawlessly, 
+leaving you free to enjoy the moments that matter most.
+Let's make your next gathering grand!</pre>
+    </div>
+</body>
+</html>
