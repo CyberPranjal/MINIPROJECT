@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            overflow: hidden;
+        }
+
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay for readability */
+            z-index: 0;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            color: rgb(218, 226, 233);
+            text-align: center;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        pre {
+            font-size: 18px;
+            line-height: 1.6;
+            white-space: normal; /* Ensures text wraps properly */
+            text-align: center; /* Centers the text */
+            margin: 0 auto; /* Centers the block horizontally */
+            width: 80%; /* Restricts width for better readability */
+        }
+
+        h3 {
+            font-size: 15px;
+            color: aqua;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Video Background -->
+    <video id="video-background" autoplay muted loop>
+        <source src="7108186-uhd_4096_2160_30fps (1).mp4".mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay for better text readability -->
+    <div id="overlay"></div>
+
+    <!-- Content -->
+    <div class="content">
+        <h2>Contact Us</h2>
+        <pre>At Grand Gatherings, we believe that every event is an opportunity to create lasting memories.
+Whether you're planning a wedding, a corporate gathering, or a special celebration, our dedicated team is here to bring your vision to life with unmatched creativity, precision, and passion.
+
+We pride ourselves on crafting seamless, personalized experiences tailored to your unique needs.
+From the smallest details to the grandest ideas, we handle everything so you can enjoy the moments that matter most.
+
+Let’s work together to make your next gathering truly unforgettable.
+
+We look forward to helping you turn your dreams into reality. Let's start planning your grand event today!</pre>
+        <h3>Reach out to us:<br>
+            📧 Email: <a href="mailto:grandgatherings@gmail.com" style="color: aqua;">grandgatherings@gmail.com</a><br> 
+            📞 Phone: +91 123 456 7890
+        </h3>
+        <h3>Office Location:<br> 
+            Grand Gatherings<br>
+            Sarojini Nagar, Delhi<br>
+            Easily accessible for consultations and planning sessions.
+        </h3>
+        <h3>Follow us on social media:<br>
+            For updates, offers, and inspiration:<br>
+            - <a href="#" style="color: aqua;">Facebook- xyzfackebook.com</a><br>
+            - <a href="#" style="color: aqua;">Instagram- xyzinstagram.com</a><br>
+            - <a href="#" style="color: aqua;">xyztwitter.com</a>
+        </h3>
+    </div>
+</body>
+</html>
